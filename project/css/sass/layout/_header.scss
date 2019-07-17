@@ -1,0 +1,168 @@
+
+// nav 
+.navbar {
+  background: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  .navbar-brand {
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $black;
+        font-size: 15px;
+        padding-left: 26px;
+        font-weight: 500;
+        span {
+          display: block;
+          width: 100%;
+          background: $primary;
+          height: 3px;
+          transition: all .3s;
+          transform: scale(0);
+          margin-top: 6px;
+        }
+      }
+      &:hover a span, &.active a span {
+        transform: scale(1);
+      }
+      .appointment {
+        color: $white;
+        width: 40%;
+        margin: 20px auto;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+
+// NavBar Fixed
+.fxtop {
+  position: fixed;
+  box-shadow: 0 0 12px #b9b9b9;
+  transition: all .8s;
+}
+// 
+
+
+// Header
+header {
+  @include background('../img/header.jpg');
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 99;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000082;
+    z-index: -1;
+  }
+  .title {
+    span {
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 64px;
+      color: $white;
+      line-height: 1;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p {
+      font-weight: 400;
+      color: #e8e8e8;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        .appointment {
+          padding: 8px 15px;
+          width: 100%;
+          margin: 0;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 991.98px), (max-width: 575.98px) {
+
+  // nav 
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding-left: 0;
+          span {
+            width: 14%;
+            margin: 5px auto 0;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Header
+  header {
+    .title {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 575.98px) {
+
+  // nav 
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          span {
+            width: 26%;
+          }
+        }
+      }
+    }
+  }
+
+  // Header
+  header {
+    background-position: 80% 0;
+    .title {
+      h1 {
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 30px;
+      }
+      p {
+        line-height: 1.5;
+      }
+      button {
+        padding: 12px 16px;
+      }
+    }
+  }
+}

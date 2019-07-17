@@ -1,0 +1,158 @@
+@media (min-width: 576px) and (max-width: 991.98px), (max-width: 575.98px) {
+
+  // Medical Clinic
+  .clinic {
+    .title {
+      h2 {
+        font-size: 40px;
+        span {
+          font-size: 40px;
+        }
+      }
+      button {
+        margin-right: 0;
+      }
+    }
+    button {
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+      &:last-of-type {
+        padding: 12px 26px;
+      }
+    }
+  }
+
+
+  // Our Services
+  .our-services {
+    .p-right {
+      h2 {
+        padding-top: 3rem;
+        text-align: center;
+      }
+    }
+    // Appointment Form
+    .appointment {
+      padding: 3rem 3rem;
+    }
+  }
+
+  
+
+    
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  // Contact Us
+  .contact-us {
+    .cont {
+      .pr-0 {
+        padding-right: 15px !important;
+      }
+      .pl-0 {
+        padding-left: 15px !important;
+      }
+    }
+  }
+
+  // Our Patient Says
+  .testimony-section {
+    .item {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  // Medical Clinic
+  .clinic {
+    .title {
+      h2 {
+        font-size: 34px;
+        span {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+
+
+  // Our Services
+  .our-services {
+    // Appointment Form
+    .appointment {
+      padding: 3rem 1rem;
+      form {
+        h4 {
+          font-size: 14px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  // Intro
+  .intro {
+    padding: 60px 0;
+    background-position: 97% 0;
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 12px 18px;
+    }
+  }
+
+  // Department
+  .department {
+    .department-wrap {
+      padding: 40px;
+    }
+  }
+  // Facts
+  .ftco-facts {
+    .subheading {
+      h2 {
+        font-size: 35px;
+      }
+    }
+    .text {
+      padding: 40px;
+      h2 {
+        color: $white;
+        font-size: 50px;
+      }
+    }
+  }
+
+  // Our Patient Says
+  .testimony-section {
+    .item {
+      margin-bottom: 40px;
+    }
+  }
+
+
+  // Contact Us
+  .contact-us {
+    .box {
+      padding: 40px 20px;
+      width: 86%;
+      margin: 20px auto;
+    }
+    .cont {
+      .maap {
+        display: none;
+      }
+      .contact {
+        form {
+          padding: 40px 0 80px;
+          margin-bottom: -60px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

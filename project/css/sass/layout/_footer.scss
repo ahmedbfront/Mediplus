@@ -1,0 +1,51 @@
+footer {
+  background: #fff;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  .foot {
+    .text {
+      margin-bottom: 40px;
+      h5 {
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #999;
+        margin-bottom: 30px;
+      }
+      ul {
+
+        li {
+          margin-bottom: 14px;
+          transition: all .3s ease-out;
+          
+          svg {
+            margin-right: 10px;
+            color: $primary;
+          }
+          a {
+            color: $primary;
+          }
+          &:hover {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .copy {
+    p {
+      font-size: 15px;
+      color: #666666;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  footer {
+    background-position: 0;
+  }
+}

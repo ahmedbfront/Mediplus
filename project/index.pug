@@ -1,0 +1,521 @@
+doctype
+html(lang='en')
+  head
+    include includes/_styles
+  body
+
+    // Navbar
+    nav(class='navbar navbar-expand-lg navbar-light')
+      div(class='container')
+        a(class='navbar-brand' href='#') Mediplus
+        button(class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbar' )
+          span(class='fas fa-align-right')
+        div(class='collapse navbar-collapse justify-content-end' id='navbar')
+          ul(class='navbar-nav text-center')
+            li(class='nav-item active'): a(class='nav-link' href='#' data-value='home') Home
+                  span
+            li(class='nav-item'): a(class='nav-link' href='#' data-value='about') About
+                  span
+            li(class='nav-item'): a(class='nav-link' href='#' data-value='department') Department
+                  span
+            li(class='nav-item'): a(class='nav-link' href='#' data-value='doctors') Doctors
+                  span
+            li(class='nav-item'): a(class='nav-link' href='#' data-value='blog') Blog
+                  span
+            li(class='nav-item'): a(class='nav-link' href='#' data-value='contact') Contact
+                  span
+            li(class='nav-item'): a(class='nav-link appointment but-primary' href='#' data-value='#') Appointment
+
+    
+    // Header 
+    header(id='home')
+      .container
+        .title
+          span welcome to mediplus
+          h1 We are here <br/> for your Care
+          p Far far away, behind the word mountains, far from the countries <br/> Vokalia and Consonantia, there live the blind texts. Separated <br/> they live in Bookmarksgrove.
+          button(class='but-primary but-primary-2') Make an appointment
+
+
+    // Medical Clinic
+    section(id='about' class='clinic text-center-xs')
+      .container
+        .row
+          div(class='col-md-5 d-flex')
+            div(class='img align-self-stretch' style="background-image: url('img/about.jpg');")
+          div(class='col-md-6 offset-md-1 pd-tb')
+            .title
+              h2 We Are 
+                span Mediplus 
+                |A 
+                | Medical Clinic
+              p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+              button(class='but-primary but-primary-2') Make an appointment
+              button(class='but-primary') Contact us
+
+    // Our Services
+    section(class='our-services')
+      .container
+        .row
+          div(class='col-lg-7 p-right')
+            .title 
+              h2 Our Services
+            .row
+              div(class='col-md-6')
+                div(class='media mq-mb')
+                  div(class='icon')
+                    span(class='flaticon-ambulance')
+                  div(class='media-body')
+                    h4 Emergency Services
+                    p A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              div(class='col-md-6')
+                div(class='media mq-mb')
+                  div(class='icon')
+                    span(class='flaticon-doctor')
+                  div(class='media-body')
+                    h4 Qualified Doctors
+                    p A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              div(class='col-md-6')
+                div(class='media mq-mb')
+                  div(class='icon')
+                    span(class='flaticon-stethoscope')
+                  div(class='media-body')
+                    h4 Outdoors Checkup
+                    p A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              div(class='col-md-6')
+                div(class='media mq-mb')
+                  div(class='icon')
+                    span(class='flaticon-24-hours')
+                  div(class='media-body')
+                    h4 24 Hours Service
+                    p A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          // Appointment Form
+          div(class='col-lg-5 md-p0')
+            div(class='appointment')
+              form
+                h4 Free Consultation
+                input(type='text' placeholder='First Name'  onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'")
+                input(type='text' placeholder='Last Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'")
+                div(class='select-wrap')
+                  div(class='icon')
+                    span(class='fas fa-angle-down')
+                  select
+                    option(value='') Select Your Services
+                    option(value='') Neurology
+                    option(value='') Cardiology
+                    option(value='') Dental
+                    option(value='') Ophthalmology
+                    option(value='') Other Services
+                input(type='text' placeholder='Phone' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'")
+                div(class='select-wrap')
+                  div(class='icon')
+                    span(class='far fa-calendar-minus')
+                  input(type='text' placeholder='Date' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date'")
+                div(class='select-wrap')
+                  div(class='icon')
+                    span(class='far fa-clock')
+                  input(type='text' placeholder='Time' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time'")
+                textarea(name='Your Message' rows='4' placeholder='Your Message' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Message'")
+
+                button(class='but-primary but-primary-2') Appointment
+                
+    // Intro
+    section(class='intro text-center')
+      .container
+        h2 Your Health is Our Priority
+        p We can manage your dream building A small river named Duden flows by their place
+        button(class='but-primary but-primary-2') Search Places
+
+    // Department
+    section(id='department' class='department')
+      .container-fluid
+        .row
+          div(class='col-md-4 d-flex p-0')
+            div(class='img align-self-stretch' style='background-image: url(img/department.jpg);')
+          div(class='col-md-8 p-0 overflow-hidden')
+            div(class='row p-0')
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Neurology
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Opthalmology
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Nuclear Magnetic
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Surgical
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Cardiology
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 X-ray
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Dental
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Traumatology
+                  p Far far away, behind the word mountains
+              div(class='col-md-4 p-0')
+                div(class='department-wrap text-center')
+                  span(class='flaticon-stethoscope')
+                  h3 Cardiology
+                  p Far far away, behind the word mountains
+
+
+    // Our Qualified
+    section(id='doctors' class='our-qualified text-center pd-tb')
+      .container
+        div(class='title t-mb')
+          h2 Our Qualified Doctors
+          p Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+        .row
+          div(class='col-lg-3 col-md-6')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/doc-1.jpg' alt='image' class='img-fluid')
+                ul(class='list-unstyled ')
+                  li(class='fab fa-facebook-f')
+                  li(class='fab fa-twitter')
+                  li(class='fab fa-google-plus-g')
+                  li(class='fab fa-instagram')
+              div(class='text')
+                h4 Dr. Lloyd Wilson
+                span Neurologist
+                p I am an ambitious workaholic, but apart from that, pretty simple person.
+                button(class='but-primary but-primary-2') Book Now
+          div(class='col-lg-3 col-md-6')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/doc-2.jpg' alt='image' class='img-fluid')
+                ul(class='list-unstyled ')
+                  li(class='fab fa-facebook-f')
+                  li(class='fab fa-twitter')
+                  li(class='fab fa-google-plus-g')
+                  li(class='fab fa-instagram')
+              div(class='text')
+                h4 Dr. Rachel Parker
+                span NDentist
+                p I am an ambitious workaholic, but apart from that, pretty simple person.
+                button(class='but-primary but-primary-2') Book Now
+          div(class='col-lg-3 col-md-6')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/doc-3.jpg' alt='image' class='img-fluid')
+                ul(class='list-unstyled ')
+                  li(class='fab fa-facebook-f')
+                  li(class='fab fa-twitter')
+                  li(class='fab fa-google-plus-g')
+                  li(class='fab fa-instagram')
+              div(class='text')
+                h4 Dr. Ian Smith
+                span Neurologist
+                p I am an ambitious workaholic, but apart from that, pretty simple person.
+                button(class='but-primary but-primary-2') Book Now
+          div(class='col-lg-3 col-md-6')
+            div(class='staff')
+              div(class='imgs')
+                img(src='img/doc-4.jpg' alt='image' class='img-fluid')
+                ul(class='list-unstyled ')
+                  li(class='fab fa-facebook-f')
+                  li(class='fab fa-twitter')
+                  li(class='fab fa-google-plus-g')
+                  li(class='fab fa-instagram')
+              div(class='text')
+                h4 Dr. Alicia Henderson
+                span Neurologist
+                p I am an ambitious workaholic, but apart from that, pretty simple person.
+                button(class='but-primary but-primary-2') Book Now
+          
+    // Facts
+    section(class='ftco-facts pd-tb')
+      .container
+        .row
+          div(class='col-md-5 align-self-center')
+            div(class='subheading text-center-xs')
+              span Fun facts
+              h2 Over 5,100 patients trust us 
+              button(class='but-primary') Make an appointment
+          div(class='col-md-7')
+            div(class='row text-center')
+              div(class='col-lg-6 bord-b bord-r')
+                .text
+                  h2 30
+                  span Years of Experienced
+              div(class='col-lg-6 bord-b')
+                .text
+                  h2 4,500
+                  span Happy Patients
+              div(class='col-lg-6 bod-b bord-r')
+                .text
+                  h2 84
+                  span Number of Doctors
+              div(class='col-lg-6')
+                .text
+                  h2 300
+                  span Number of Staffs
+
+    // Every Single
+    section(id='blog' class='every-single pd-tb')
+      .container
+        div(class='title t-mb text-center')
+          h2 Gets Every Single Updates Here
+          p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+        .row
+          div(class='col-lg-4 col-md-4')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/image_1.jpg' alt='image' class='img-fluid')
+              div(class='text')
+                span June 9, 2019 
+                  <span class='icon-chat'></span>
+                h4 Scary Thing That You Don’t Get Enough Sleep
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                button(class='but-primary but-primary-2') Read more
+          div(class='col-lg-4 col-md-4')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/image_2.jpg' alt='image' class='img-fluid')
+              div(class='text')
+                span June 9, 2019 
+                  <span class='icon-chat'></span>
+                h4 Scary Thing That You Don’t Get Enough Sleep
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                button(class='but-primary but-primary-2') Read more
+          div(class='col-lg-4 col-md-4')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/image_3.jpg' alt='image' class='img-fluid')
+              div(class='text')
+                span June 9, 2019 
+                  <span class='icon-chat'></span>
+                h4 Scary Thing That You Don’t Get Enough Sleep
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                button(class='but-primary but-primary-2') Read more
+          div(class='col-lg-4 col-md-4')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/image_4.jpg' alt='image' class='img-fluid')
+              div(class='text')
+                span June 9, 2019 
+                  <span class='icon-chat'></span>
+                h4 Scary Thing That You Don’t Get Enough Sleep
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                button(class='but-primary but-primary-2') Read more
+          div(class='col-lg-4 col-md-4')
+            div(class='staff mq-mb')
+              div(class='imgs')
+                img(src='img/image_5.jpg' alt='image' class='img-fluid')
+              div(class='text')
+                span June 9, 2019 
+                  <span class='icon-chat'></span>
+                h4 Scary Thing That You Don’t Get Enough Sleep
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                button(class='but-primary but-primary-2') Read more
+          div(class='col-lg-4 col-md-4')
+            div(class='staff')
+              div(class='imgs')
+                img(src='img/image_6.jpg' alt='image' class='img-fluid')
+              div(class='text')
+                span June 9, 2019 
+                  <span class='icon-chat'></span>
+                h4 Scary Thing That You Don’t Get Enough Sleep
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                button(class='but-primary but-primary-2') Read more
+          
+    // Our Patient Says
+    section(class='testimony-section pd-tb text-center')
+      .container
+        div(class='title t-mb')
+          span Read testimonials
+          h2 Our Patient Says
+        .row
+          div(class='col-md-4')
+            div(class='item')
+              div(class='imgs')
+                img(src='img/person_1.jpg' alt='image' class='img-fluid rounded-circle')
+                span(class='fas fa-quote-left')
+              div(class='text')
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                h5 Jeff Freshman
+                span Patients
+          div(class='col-md-4')
+            div(class='item')
+              div(class='imgs')
+                img(src='img/person_2.jpg' alt='image' class='img-fluid rounded-circle')
+                span(class='fas fa-quote-left')
+              div(class='text')
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                h5 Jeff Freshman
+                span Patients
+          div(class='col-md-4')
+            div(class='item mq-m0')
+              div(class='imgs')
+                img(src='img/person_3.jpg' alt='image' class='img-fluid rounded-circle')
+                span(class='fas fa-quote-left')
+              div(class='text')
+                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                h5 Jeff Freshman
+                span Patients
+                
+    // Contact Us
+    section(id='contact' class='contact-us text-center pd-tb')
+      .container
+        div(class='title t-mb')
+          h2 Contact Us
+          p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+        .row
+          div(class='col-lg-3 col-md-6 d-flex')
+            div(class='box mq-mb')
+              .icone
+                span(class='fas fa-map-signs')
+              .text
+                h5 Address
+                p 198 West 21th Street, Suite 721 New York NY 10016
+          div(class='col-lg-3 col-md-6 d-flex')
+            div(class='box mq-mb')
+              .icone
+                span(class='fas fa-phone-alt')
+              .text
+                h5 Contact Number
+                p: a(href='tel://1234567920')  1235 2355 98 
+          div(class='col-lg-3 col-md-6 d-flex')
+            div(class='box mq-mb')
+              .icone
+                span(class='fas fa-paper-plane')
+              .text
+                h5 Email Address
+                p: a(href='mailto:info@yoursite.com') info@yoursite.com
+          div(class='col-lg-3 col-md-6 d-flex')
+            div(class='box mq-mb')
+              .icone
+                span(class='fas fa-globe-asia')
+              .text
+                h5 Website
+                p: a(href='#') yoursite.com
+
+        div(class='row cont')
+          div(class='col-md-6 pr-0')
+            section(class='maap')
+              div(class='ifra-1')
+                <iframe width='700' height='598' src='https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=+(%D9%86%D9%8A%D9%88%20%D9%8A%D9%88%D8%B1%D9%83)&amp;ie=UTF8&amp;t=&amp;z=5&amp;iwloc=B&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'>
+                </iframe>
+          div(class='col-md-6  pl-0 md-p0')
+            div(class='contact')
+              form
+                input(type='text' placeholder='Name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'")
+                input(type='text' placeholder='Email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'")
+                input(type='text' placeholder='Phone' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'")
+                input(type='text' placeholder='Country' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Country'")
+                textarea(name='Your Message' rows='4'  placeholder='Your Message' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Message'")
+                button(type='submit' class='but-primary') Send Message
+
+    // Footer
+    footer
+      .container
+        .row
+          div(class='col-md-3 col-sm-6')
+            div(class='foot')
+              div(class='text')
+                h5 Mediplus
+                p Far far away, behind the word mountains, far from the countries.
+              
+          div(class='col-md-3 col-sm-6')
+            div(class='foot')
+              div(class='text')
+                h5 Departments
+                ul(class='list-unstyled')
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Neurology
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Opthalmology
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Nuclear Magnetic
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Surgical
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Cardiology
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Dental
+
+          div(class='col-md-3 col-sm-6')
+            div(class='foot')
+              div(class='text')
+                h5 Links
+                ul(class='list-unstyled')
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Home
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') About
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Departments
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Doctors
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Bolg
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Pricing
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Contact
+
+          div(class='col-md-3 col-sm-6')
+            div(class='foot')
+              div(class='text')
+                h5 Services
+                ul(class='list-unstyled')
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Emergency Services
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Qualified Doctors
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') Outdoors Checkup
+                  li
+                    span( class='fas fa-long-arrow-alt-right') 
+                    a(href='#') 24 Hours Services
+
+          div(class='copy col-md-12 text-center')
+            p Copyright ©2019 All rights reserved | Designed By Ahmed Badr
+
+
+    div(class='loading')
+      div(class='spinner')
+        div(class='double-bounce1')
+        div(class='double-bounce2')
+
+    
+    script(src='http://localhost:35729/livereload.js')
+    include includes/_scripts

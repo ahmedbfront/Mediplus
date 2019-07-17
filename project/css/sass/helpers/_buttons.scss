@@ -1,0 +1,40 @@
+.but-primary {
+  background: $primary-color;
+  color: $white;
+  padding: 15px 26px;
+  font-size: 18px;
+  outline: 0;
+  border: 0;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  border-radius: 30px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: $primary;
+    transform: scaleX(0);
+    transition: all .3s ease-out;
+    border-radius: 30px;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+
+.but-primary-2 {
+  background: $primary;
+  &:before {
+    content: '';
+    background: $primary-color;
+  }
+}
